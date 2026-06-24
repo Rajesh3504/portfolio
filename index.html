@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rajesh Ponnaganti | AI Engineer</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+--bg:#050816;--card:rgba(255,255,255,.05);--primary:#00F5FF;--secondary:#8A2BE2;--text:#fff;--muted:#a8b2d1;
+}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,sans-serif}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:#fff;overflow-x:hidden}
+#particles{position:fixed;inset:0;z-index:-1;background:
+radial-gradient(circle at 10% 20%,rgba(0,245,255,.15),transparent 25%),
+radial-gradient(circle at 90% 80%,rgba(138,43,226,.15),transparent 25%),#050816;}
+nav{position:fixed;top:0;width:100%;padding:20px 8%;display:flex;justify-content:space-between;backdrop-filter:blur(15px);background:rgba(0,0,0,.2);z-index:1000}
+.logo{color:var(--primary);font-weight:800}
+nav ul{display:flex;gap:25px;list-style:none}
+nav a{text-decoration:none;color:#fff}
+.hero{min-height:100vh;display:grid;grid-template-columns:1.2fr 1fr;align-items:center;padding:120px 8%;gap:40px}
+.status{display:inline-block;padding:10px 18px;border-radius:30px;background:rgba(0,255,150,.15);border:1px solid rgba(0,255,150,.3);margin-bottom:20px}
+.hero h1{font-size:5rem;line-height:1}
+.gradient{background:linear-gradient(90deg,var(--primary),var(--secondary));-webkit-background-clip:text;color:transparent}
+.hero p{margin-top:20px;color:var(--muted);line-height:1.8}
+.profile-wrap{position:relative;display:flex;justify-content:center}
+.profile{width:320px;height:320px;border-radius:50%;object-fit:cover;border:4px solid var(--primary);box-shadow:0 0 40px #00ffff,0 0 100px rgba(0,255,255,.3)}
+.orbit{position:absolute;width:400px;height:400px;border:1px dashed rgba(0,255,255,.3);border-radius:50%;animation:spin 15s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.badges span,.skill,.socials a{display:inline-block;margin:8px;padding:12px 18px;border-radius:30px;border:1px solid rgba(0,245,255,.3)}
+.btn{display:inline-block;padding:14px 24px;margin:10px;border-radius:30px;text-decoration:none}
+.primary{background:linear-gradient(90deg,var(--primary),var(--secondary));color:#000;font-weight:700}
+.secondary{color:var(--primary);border:1px solid var(--primary)}
+section{padding:100px 8%}
+.section-title{text-align:center;font-size:3rem;margin-bottom:40px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.card{background:var(--card);padding:25px;border-radius:20px;border:1px solid rgba(255,255,255,.08);backdrop-filter:blur(15px);transition:.3s}
+.card:hover{transform:translateY(-8px);border-color:var(--primary)}
+.card h3{color:var(--primary);margin-bottom:10px}
+.terminal{background:#0d1224;padding:30px;border-radius:20px;font-family:monospace;line-height:2;border:1px solid rgba(0,255,255,.2)}
+.skills{text-align:center}
+.timeline-item{padding:20px;border-left:3px solid var(--primary);margin:20px 0;background:rgba(255,255,255,.03)}
+.socials{text-align:center}
+.socials a{text-decoration:none;color:white}
+footer{text-align:center;padding:40px;color:var(--muted)}
+@media(max-width:900px){
+.hero{grid-template-columns:1fr;text-align:center}
+.hero h1{font-size:3rem}
+.profile{width:250px;height:250px}
+.orbit{width:300px;height:300px}
+nav ul{display:none}
+}
+</style>
+</head>
+<body>
+<div id="particles"></div>
+
+<nav>
+<div class="logo">RAJESH.P</div>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+<div>
+<div class="status">🟢 Available for AI Internships & Startup Opportunities</div>
+<h1><span id="typing"></span></h1>
+<h2 class="gradient">MSc Artificial Intelligence & Robotics</h2>
+<p>
+ AI Engineer • Agentic AI Developer • LLM Engineer.
+Building AI Agents, RAG Systems, Autonomous Research Assistants, Voice AI and Edge AI Solutions on Raspberry Pi.
+</p>
+<div class="badges">
+<span>AI Agents</span><span>LLMs</span><span>RAG</span><span>Transformers</span><span>GenAI</span><span>Raspberry Pi</span>
+</div>
+<br>
+<a href="Rajesh_resume_uk.pdf" class="btn primary">Download Resume</a>
+<a href="#projects" class="btn secondary">Explore Projects</a>
+</div>
+
+<div class="profile-wrap">
+<div class="orbit"></div>
+<img src="rajesh.jpg" class="profile">
+</div>
+</section>
+
+<section id="about">
+<h2 class="section-title gradient">About Me</h2>
+<div class="terminal">
+$ whoami <br>
+Rajesh Ponnaganti<br><br>
+MSc Artificial Intelligence & Robotics<br>
+University of Hertfordshire, United Kingdom<br><br>
+B.Tech Computer Science & Engineering (AI & Intelligent Process Automation)<br>
+KL University, India<br><br>
+Current Focus:<br>
+> AI Agents<br>
+> Multi-Agent Systems<br>
+> RAG Architectures<br>
+> LLM Applications<br>
+> Voice AI Assistants<br>
+> Raspberry Pi Edge AI
+</div>
+</section>
+
+<section id="education">
+<h2 class="section-title gradient">Education</h2>
+<div class="grid">
+<div class="card"><h3>University of Hertfordshire 🇬🇧</h3><p>MSc Artificial Intelligence & Robotics<br>2025 - Present</p></div>
+<div class="card"><h3>KL University 🇮🇳</h3><p>B.Tech CSE<br>Specialization in AI & Intelligent Process Automation<br>CGPA: 8.86</p></div>
+</div>
+</section>
+
+<section id="projects">
+<h2 class="section-title gradient">Featured Projects</h2>
+<div class="grid">
+<div class="card"><h3>Voice AI Assistant for Raspberry Pi</h3><p>Speech-to-text, LLM reasoning and task execution on edge devices.</p></div>
+<div class="card"><h3>Autonomous AI Research Assistant</h3><p>Multi-agent workflow for research, retrieval and summarization.</p></div>
+<div class="card"><h3>RAG Knowledge Assistant</h3><p>Semantic search and retrieval-powered AI assistant.</p></div>
+<div class="card"><h3>LLMs on Raspberry Pi</h3><p>Optimizing quantized models for constrained hardware.</p></div>
+<div class="card"><h3>Resume Builder</h3><p>Streamlit and Python based professional resume generation.</p></div>
+<div class="card"><h3>Event Management System</h3><p>Full-stack web application for event operations.</p></div>
+</div>
+</section>
+
+<section>
+<h2 class="section-title gradient">Tech Stack</h2>
+<div class="skills">
+<span class="skill">Python</span><span class="skill">PyTorch</span><span class="skill">TensorFlow</span>
+<span class="skill">LangChain</span><span class="skill">RAG</span><span class="skill">FastAPI</span>
+<span class="skill">Streamlit</span><span class="skill">Docker</span><span class="skill">Linux</span>
+<span class="skill">Vector Databases</span><span class="skill">Raspberry Pi</span>
+</div>
+</section>
+
+<section>
+<h2 class="section-title gradient">Current Experiments</h2>
+<div class="grid">
+<div class="card">🧠 Running Quantized LLMs on Raspberry Pi Zero</div>
+<div class="card">🤖 Multi-Agent AI Systems</div>
+<div class="card">🎙 Voice AI Assistants</div>
+<div class="card">🔍 Advanced RAG Pipelines</div>
+</div>
+</section>
+
+<section id="contact">
+<h2 class="section-title gradient">Connect With Me</h2>
+<div class="socials">
+<a href="mailto:rajesh030504@gmail.com">📧 Email</a>
+<a href="https://wa.me/447901210595">💬 WhatsApp</a>
+<a href="https://github.com/Rajesh3504">💻 GitHub</a>
+<a href="https://www.linkedin.com/in/rajeshponnaganti/">🔗 LinkedIn</a>
+<a href="https://www.instagram.com/rajesh_3.5.4">📷 Instagram</a>
+</div>
+</section>
+
+<footer>
+<h3>Building the future, one AI agent at a time 🚀</h3>
+<p>Rajesh Ponnaganti • MSc AI & Robotics • University of Hertfordshire</p>
+</footer>
+
+<script>
+const text="Building AI Agents That Think";
+let i=0;
+function type(){
+ if(i<text.length){
+  document.getElementById("typing").innerHTML+=text.charAt(i);
+  i++; setTimeout(type,60);
+ }
+}
+type();
+
+document.addEventListener("mousemove",(e)=>{
+const x=e.clientX/window.innerWidth*100;
+const y=e.clientY/window.innerHeight*100;
+document.getElementById("particles").style.background=`
+radial-gradient(circle at ${x}% ${y}%,rgba(0,245,255,.15),transparent 20%),
+radial-gradient(circle at ${100-x}% ${100-y}%,rgba(138,43,226,.15),transparent 25%),#050816`;
+});
+</script>
+</body>
+</html>
